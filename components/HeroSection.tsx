@@ -112,8 +112,9 @@ function HeroVisual() {
           <p className="text-xs font-semibold uppercase text-accent">
             Комплекс
           </p>
-          <p className="mt-2 text-lg font-semibold leading-tight text-ink">
-            микроэлементы
+          <p className="mt-2 text-[15px] font-semibold leading-tight text-ink">
+            микро-
+            <span className="block">элементы</span>
           </p>
         </div>
         <div className="absolute bottom-7 left-5 right-5 h-2 rounded-full bg-accent/20" />
