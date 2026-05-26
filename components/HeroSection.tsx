@@ -2,6 +2,8 @@ import Image from "next/image";
 import { ArrowDownRight, ArrowRight } from "lucide-react";
 import { trustMarkers } from "@/lib/content";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export function HeroSection() {
   return (
     <section
@@ -9,7 +11,7 @@ export function HeroSection() {
       className="relative isolate overflow-hidden bg-ink text-white"
     >
       <Image
-        src="/assets/demo-production-hero.png"
+        src={`${basePath}/assets/demo-production-hero.png`}
         alt="Abstract production context placeholder"
         fill
         priority

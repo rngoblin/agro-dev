@@ -7,7 +7,7 @@ const description =
   "Обезличенный demo landing page для портфолио: структура, UX-логика, веб-дизайн и фронтенд-сборка B2B-направления жидких микроудобрений.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://rngoblin.github.io/agro-dev"),
   title,
   description,
   openGraph: {

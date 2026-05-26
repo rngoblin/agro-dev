@@ -33,6 +33,14 @@ http://localhost:3000
 npm run build
 ```
 
+## GitHub Pages build
+
+Для публикации на `https://rngoblin.github.io/agro-dev/` проект собирается как static export с base path `/agro-dev`:
+
+```bash
+GITHUB_PAGES=true npm run build
+```
+
 ## Проверка качества
 
 ```bash
@@ -67,7 +75,7 @@ npm run lint
 ## Public demo URL
 
 ```text
-Добавить после деплоя на Vercel или Netlify.
+https://rngoblin.github.io/agro-dev/
 ```
 
 ## Demo / placeholder данные
