@@ -16,26 +16,22 @@ export function DemoContactSection() {
   return (
     <section id="contact" className="section-y bg-ink text-white">
       <div className="section-shell">
-        <div className="grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
-          <div>
-            <SectionHeader
-              kicker="Форма заявки"
-              title="Запросить консультацию по продуктовой линейке"
-              text="Демонстрационный сценарий показывает, как пользователь может оставить контекстную заявку: компания, задача, контакт и комментарий."
-              tone="dark"
-            />
-            <p className="mt-8 rounded-lg border border-white/12 bg-white/[0.06] p-5 text-sm leading-6 text-white/72">
-              Демо-форма: данные не отправляются и не сохраняются.
-            </p>
-          </div>
+        <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+          <SectionHeader
+            kicker="Заявка"
+            title="Подобрать решение"
+            text="Оставьте задачу, культуру и контакт — специалист поможет определить, какие продукты линейки могут подойти."
+            tone="dark"
+          />
 
           <div className="rounded-lg bg-white p-5 text-graphite shadow-soft md:p-7">
             {submitted ? (
               <div
-                className="mb-6 rounded-lg border border-accent/30 bg-wash p-4 text-ink"
+                className="mb-6 rounded-lg border border-accent/30 bg-wash p-4 text-sm leading-6 text-ink"
                 role="status"
               >
-                Данные не отправлены. Это демонстрационный сценарий заявки.
+                Заявка сформирована в демо-режиме. В реальном проекте форма
+                может быть подключена к почте, CRM или Telegram.
               </div>
             ) : null}
 
@@ -52,19 +48,40 @@ export function DemoContactSection() {
                   />
                 </label>
                 <label className="grid gap-2 text-sm font-semibold text-ink">
-                  Компания
+                  Компания / хозяйство
                   <input className="field" name="company" type="text" />
                 </label>
               </div>
 
+              <div className="grid gap-5 md:grid-cols-2">
+                <label className="grid gap-2 text-sm font-semibold text-ink">
+                  Телефон или email
+                  <input
+                    className="field"
+                    name="contact"
+                    type="text"
+                    autoComplete="email"
+                    required
+                  />
+                </label>
+                <label className="grid gap-2 text-sm font-semibold text-ink">
+                  Культура
+                  <input
+                    className="field"
+                    name="culture"
+                    type="text"
+                    placeholder="Например: томаты, зерновые, яблоня"
+                  />
+                </label>
+              </div>
+
               <label className="grid gap-2 text-sm font-semibold text-ink">
-                Телефон или email
+                Задача
                 <input
                   className="field"
-                  name="contact"
+                  name="task"
                   type="text"
-                  autoComplete="email"
-                  required
+                  placeholder="Дефицит, рост, стресс, цветение, завязь"
                 />
               </label>
 
@@ -73,7 +90,7 @@ export function DemoContactSection() {
                 <textarea
                   className="field min-h-28 resize-y"
                   name="comment"
-                  placeholder="Например: культура, задача, сезонность или запрос на консультацию"
+                  placeholder="Опишите формат хозяйства, этап развития растения или вопрос по линейке"
                 />
               </label>
 
@@ -81,13 +98,9 @@ export function DemoContactSection() {
                 type="submit"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent focus:outline-none focus-visible:shadow-focus"
               >
-                Показать сценарий отправки
+                Отправить заявку
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </button>
-
-              <p className="text-sm leading-6 text-graphite/64">
-                Демо-форма: данные не отправляются и не сохраняются.
-              </p>
             </form>
           </div>
         </div>

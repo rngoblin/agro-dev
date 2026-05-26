@@ -1,35 +1,29 @@
-import { beforeAfter } from "@/lib/content";
+import { cultureCards } from "@/lib/content";
 import { SectionHeader } from "./SectionHeader";
 
 export function BeforeAfterSection() {
   return (
-    <section id="before-after" className="section-y bg-white">
+    <section id="cultures" className="section-y bg-paper">
       <div className="section-shell">
         <SectionHeader
-          kicker="До / после"
-          title="Логика до и после редизайна"
-          text="Это не сравнение с реальным сайтом, а безопасная демонстрация типовой трансформации B2B-лендинга."
+          kicker="Культуры"
+          title="Для разных культур и форматов выращивания"
+          text="Одна и та же линейка может работать по-разному: для поля, теплицы, сада, розницы или декоративных растений важны разные сценарии консультации."
         />
 
-        <div className="mt-12 overflow-hidden rounded-lg border border-line">
-          <div className="grid bg-ink text-sm font-semibold uppercase text-white md:grid-cols-2">
-            <div className="border-b border-white/12 p-5 md:border-b-0 md:border-r">
-              Типичный старый лендинг
-            </div>
-            <div className="p-5">Новая структура концепта</div>
-          </div>
-          {beforeAfter.map((item) => (
-            <div
-              key={item.before}
-              className="grid border-t border-line bg-paper md:grid-cols-2"
+        <div className="mt-12 grid gap-4 lg:grid-cols-5">
+          {cultureCards.map((culture) => (
+            <article
+              key={culture.title}
+              className="min-h-64 rounded-lg border border-line bg-white p-6 transition hover:-translate-y-1 hover:border-accent/35 hover:shadow-soft"
             >
-              <p className="border-b border-line p-5 text-sm leading-6 text-graphite/72 md:border-b-0 md:border-r">
-                {item.before}
+              <h3 className="text-xl font-semibold leading-snug text-ink">
+                {culture.title}
+              </h3>
+              <p className="mt-4 text-sm leading-6 text-graphite/72">
+                {culture.text}
               </p>
-              <p className="p-5 text-sm font-semibold leading-6 text-ink">
-                {item.after}
-              </p>
-            </div>
+            </article>
           ))}
         </div>
       </div>

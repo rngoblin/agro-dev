@@ -1,4 +1,4 @@
-import { Beaker, PackageCheck } from "lucide-react";
+import { ArrowRight, Beaker, Droplets } from "lucide-react";
 import { productLine } from "@/lib/content";
 import { SectionHeader } from "./SectionHeader";
 
@@ -8,35 +8,41 @@ export function ProductLineSection() {
       <div className="section-shell">
         <SectionHeader
           kicker="Линейка"
-          title="Условная продуктовая линейка"
-          text="Карточки показывают, как можно подать разные группы продуктов коммерчески: с назначением, ролью в линейке и переходом к консультации, без публикации составов, дозировок и прайс-листов."
+          title="Продуктовая линейка"
+          text="В линейке собраны комплексные и моноэлементные решения. Каждая карточка объясняет назначение продукта простым языком и ведет к консультации."
         />
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {productLine.map((product, index) => (
             <article
               key={product.title}
-              className="min-h-64 rounded-lg border border-line bg-white p-6"
+              className="group flex min-h-[320px] flex-col rounded-lg border border-line bg-white p-6 transition hover:-translate-y-1 hover:border-accent/35 hover:shadow-soft"
             >
               <div className="mb-8 flex items-center justify-between">
-                <span className="text-xs font-semibold uppercase text-graphite/48">
-                  {String(index + 1).padStart(2, "0")}
+                <span className="rounded-full bg-wash px-3 py-1 text-xs font-semibold text-accent">
+                  {product.group}
                 </span>
                 {index % 2 === 0 ? (
                   <Beaker className="h-5 w-5 text-accent" aria-hidden="true" />
                 ) : (
-                  <PackageCheck
-                    className="h-5 w-5 text-accent"
-                    aria-hidden="true"
-                  />
+                  <Droplets className="h-5 w-5 text-accent" aria-hidden="true" />
                 )}
               </div>
-              <h3 className="text-xl font-semibold text-ink">
+
+              <h3 className="text-xl font-semibold leading-snug text-ink">
                 {product.title}
               </h3>
               <p className="mt-4 text-sm leading-6 text-graphite/72">
-                {product.note}
+                {product.text}
               </p>
+
+              <a
+                href="#contact"
+                className="mt-auto inline-flex items-center gap-2 pt-8 text-sm font-semibold text-accent transition hover:text-ink"
+              >
+                Уточнить применение
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </a>
             </article>
           ))}
         </div>

@@ -9,16 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#18191B",
-        graphite: "#303236",
-        paper: "#F7F7F3",
-        wash: "#ECEFEA",
-        accent: "#5E6D62",
-        line: "#D8D8D2"
+        ink: "#17201A",
+        graphite: "#303832",
+        paper: "#F7F8F3",
+        wash: "#EAF0E7",
+        accent: "#3F6F52",
+        line: "#D8DED2"
       },
       boxShadow: {
-        soft: "0 18px 60px rgba(24, 25, 27, 0.08)",
-        focus: "0 0 0 4px rgba(94, 109, 98, 0.18)"
+        soft: "0 18px 60px rgba(23, 32, 26, 0.09)",
+        focus: "0 0 0 4px rgba(63, 111, 82, 0.18)"
       }
     }
   },
