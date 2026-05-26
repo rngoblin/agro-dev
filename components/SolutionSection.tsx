@@ -8,7 +8,7 @@ export function SolutionSection() {
       <div className="section-shell">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <SectionHeader
-            kicker="Solution"
+            kicker="Решение"
             title="Как новая структура делает продукт понятнее"
             text="Лендинг не притворяется техническим каталогом. Он собирает коммерческую логику: кто продукт покупает, какие группы есть в линейке и куда нажать дальше."
           />
@@ -40,7 +40,7 @@ export function SolutionSection() {
           href="#products"
           className="mt-9 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-4 text-sm font-semibold text-white transition hover:bg-accent"
         >
-          Перейти к demo-линейке
+          Перейти к продуктовой линейке
           <ArrowRight className="h-4 w-4" aria-hidden="true" />
         </a>
       </div>

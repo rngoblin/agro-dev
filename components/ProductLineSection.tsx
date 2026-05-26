@@ -7,9 +7,9 @@ export function ProductLineSection() {
     <section id="products" className="section-y bg-paper">
       <div className="section-shell">
         <SectionHeader
-          kicker="Product line"
+          kicker="Линейка"
           title="Условная продуктовая линейка"
-          text="Карточки показывают интерфейсную логику каталога. Это placeholder-данные без составов, дозировок, прайс-листов и коммерческих обещаний."
+          text="Карточки показывают, как можно подать разные группы продуктов коммерчески: с назначением, ролью в линейке и переходом к консультации, без публикации составов, дозировок и прайс-листов."
         />
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

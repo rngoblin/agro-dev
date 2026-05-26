@@ -19,14 +19,13 @@ export function DemoContactSection() {
         <div className="grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
           <div>
             <SectionHeader
-              kicker="Contact / demo CTA"
-              title="Демонстрационная форма заявки"
-              text="Форма не отправляет данные, не подключена к CRM и нужна только для показа UX-сценария."
+              kicker="Форма заявки"
+              title="Запросить консультацию по продуктовой линейке"
+              text="Демонстрационный сценарий показывает, как пользователь может оставить контекстную заявку: компания, задача, контакт и комментарий."
               tone="dark"
             />
             <p className="mt-8 rounded-lg border border-white/12 bg-white/[0.06] p-5 text-sm leading-6 text-white/72">
-              После отправки показывается сообщение “Demo form”. Это безопасный
-              portfolio pattern без реальной обработки персональных данных.
+              Демо-форма: данные не отправляются и не сохраняются.
             </p>
           </div>
 
@@ -36,7 +35,7 @@ export function DemoContactSection() {
                 className="mb-6 rounded-lg border border-accent/30 bg-wash p-4 text-ink"
                 role="status"
               >
-                Demo form: данные не отправлены. Это демонстрационный сценарий.
+                Данные не отправлены. Это демонстрационный сценарий заявки.
               </div>
             ) : null}
 
@@ -74,7 +73,7 @@ export function DemoContactSection() {
                 <textarea
                   className="field min-h-28 resize-y"
                   name="comment"
-                  placeholder="Например: интересует структура B2B-лендинга или похожий portfolio case"
+                  placeholder="Например: культура, задача, сезонность или запрос на консультацию"
                 />
               </label>
 
@@ -82,13 +81,12 @@ export function DemoContactSection() {
                 type="submit"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent focus:outline-none focus-visible:shadow-focus"
               >
-                Показать Demo form
+                Показать сценарий отправки
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </button>
 
               <p className="text-sm leading-6 text-graphite/64">
-                В production-проекте этот блок можно заменить на интеграцию с
-                CRM, почтой или формой платформы деплоя.
+                Демо-форма: данные не отправляются и не сохраняются.
               </p>
             </form>
           </div>

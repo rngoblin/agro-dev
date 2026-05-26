@@ -6,7 +6,7 @@ export function BeforeAfterSection() {
     <section id="before-after" className="section-y bg-white">
       <div className="section-shell">
         <SectionHeader
-          kicker="Before / After"
+          kicker="До / после"
           title="Логика до и после редизайна"
           text="Это не сравнение с реальным сайтом, а безопасная демонстрация типовой трансформации B2B-лендинга."
         />

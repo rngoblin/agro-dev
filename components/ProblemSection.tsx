@@ -9,9 +9,9 @@ export function ProblemSection() {
     <section id="problem" className="section-y bg-paper">
       <div className="section-shell">
         <SectionHeader
-          kicker="Problem"
+          kicker="Проблема"
           title="Что ломает типичный старый B2B-лендинг"
-          text="В демонстрационном кейсе нет реального старого сайта. Блок показывает типовые проблемы, которые часто мешают производственному продукту звучать ясно."
+          text="Когда сложный продукт описан без ясного сценария, посетитель тратит силы на расшифровку страницы вместо того, чтобы понять задачу, выбрать следующий шаг и оставить заявку."
         />
 
         <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-5">

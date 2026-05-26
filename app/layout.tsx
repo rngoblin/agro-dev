@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const title =
-  "B2B landing concept for liquid micronutrient fertilizers | Portfolio demo";
+  "Лендинг для B2B-продукта: от сложной линейки к понятной заявке";
 const description =
-  "Обезличенный demo landing page для портфолио: структура, UX-логика, веб-дизайн и фронтенд-сборка B2B-направления жидких микроудобрений.";
+  "Обезличенный демо-кейс B2B-лендинга: структура, UX-логика, веб-дизайн и фронтенд-сборка для направления жидких микроудобрений.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rngoblin.github.io/agro-dev"),
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    siteName: "Liquid Concept Demo",
+    siteName: "Демо-кейс B2B-лендинга",
     locale: "ru_RU",
     type: "website",
     images: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "/assets/demo-production-hero.png",
         width: 1200,
         height: 630,
-        alt: "Demo B2B landing concept placeholder"
+        alt: "Демо-кейс B2B-лендинга для производственного направления"
       }
     ]
   }

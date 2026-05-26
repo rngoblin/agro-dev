@@ -19,14 +19,14 @@ export default function CasePage() {
               Назад к лендингу
             </Link>
             <p className="mt-12 text-xs font-semibold uppercase text-white/56">
-              Demo case · not an official company website
+              Демо-кейс для портфолио · не является официальным сайтом компании
             </p>
             <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-tight md:text-6xl">
-              B2B landing concept for liquid micronutrient fertilizers
+              Описание кейса: лендинг для B2B-направления жидких микроудобрений
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/74">
-              Обезличенный portfolio case о структуре, UX-логике, визуальной
-              системе и фронтенд-сборке демонстрационного B2B-лендинга.
+              Обезличенный кейс о структуре, UX-логике, визуальной системе и
+              фронтенд-сборке демонстрационного B2B-лендинга.
             </p>
           </div>
         </section>

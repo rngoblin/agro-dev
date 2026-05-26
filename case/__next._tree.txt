@@ -1,2 +1,2 @@
-:HL["/agro-dev/_next/static/chunks/0lxt.zhk2ypa9.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"case","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"X1r_7NQp0KuFvUIcPiLDU"}
+:HL["/agro-dev/_next/static/chunks/0ov7tn24d.wvo.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"case","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"1z7hlbWg6EhH1Q0KKov0P"}

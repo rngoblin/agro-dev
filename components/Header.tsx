@@ -14,16 +14,16 @@ export function Header() {
         <Link
           href="/"
           className="flex min-w-0 items-center gap-3 text-ink"
-          aria-label="Demo B2B landing concept"
+          aria-label="Демо-кейс B2B-лендинга"
           onClick={() => setOpen(false)}
         >
           <span className="grid h-10 w-10 place-items-center rounded-full border border-ink text-xs font-semibold uppercase">
-            LC
+            B2B
           </span>
           <span className="grid leading-none">
-            <span className="text-base font-semibold">Liquid Concept</span>
+            <span className="text-base font-semibold">B2B-лендинг</span>
             <span className="mt-1 text-xs uppercase text-graphite/60">
-              portfolio demo
+              демо-кейс
             </span>
           </span>
         </Link>
@@ -44,7 +44,7 @@ export function Header() {
           href="/#contact"
           className="hidden items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent lg:inline-flex"
         >
-          Demo form
+          Форма заявки
           <ArrowRight className="h-4 w-4" aria-hidden="true" />
         </Link>
 
@@ -84,7 +84,7 @@ export function Header() {
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-semibold text-white"
               onClick={() => setOpen(false)}
             >
-              Demo form
+              Форма заявки
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
           </nav>

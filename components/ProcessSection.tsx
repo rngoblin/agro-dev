@@ -7,7 +7,7 @@ export function ProcessSection() {
     <section id="process" className="section-y bg-paper">
       <div className="section-shell">
         <SectionHeader
-          kicker="Process"
+          kicker="Процесс"
           title="Сценарий работы в B2B-логике"
           text="Схема показывает коммерческий путь, но не раскрывает реальные условия, документы или операционные детали."
         />
@@ -19,7 +19,7 @@ export function ProcessSection() {
               className="relative rounded-lg border border-line bg-white p-5"
             >
               <span className="text-xs font-semibold uppercase text-graphite/48">
-                step {index + 1}
+                шаг {index + 1}
               </span>
               <h3 className="mt-8 text-lg font-semibold leading-snug text-ink">
                 {step}
